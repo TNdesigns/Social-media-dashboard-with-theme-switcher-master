@@ -28,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function(){
     const h11 = document.getElementById("h11");
     const h12 = document.getElementById("h12");
     const ovrvw = document.getElementById("ovrvw");
+    const name = document.getElementById("name");
+    const name2 = document.getElementById("name2");
+    const name3 = document.getElementById("name3");
+    const name4 = document.getElementById("name4");
+    const fw = document.getElementById("fwr");
+    const fw2 = document.getElementById("fwr2");
+    const fw3 = document.getElementById("fwr3");
+    const fw4 = document.getElementById("fwr4");
 
     cToggle.addEventListener("click", function () {
         if (cToggle.checked){
@@ -59,6 +67,14 @@ document.addEventListener("DOMContentLoaded", function(){
             h11.style.color = "white";
             h12.style.color = "white";
             ovrvw.style.color = "white";
+            name.style.color = "rgb(155, 148, 148)";
+            name2.style.color = "rgb(155, 148, 148)";
+            name3.style.color = "rgb(155, 148, 148)";
+            name4.style.color = "rgb(155, 148, 148)";
+            fw.style.color = "rgb(155, 148, 148)";
+            fw2.style.color = "rgb(155, 148, 148)";
+            fw3.style.color = "rgb(155, 148, 148)";
+            fw4.style.color = "rgb(155, 148, 148)";
         } else {
             bdy.style.backgroundColor = "white";
             tc.style.backgroundColor = "rgb(227, 227, 248)";
@@ -88,6 +104,14 @@ document.addEventListener("DOMContentLoaded", function(){
             h11.style.color = "black";
             h12.style.color = "black";
             ovrvw.style.color = "rgb(81, 83, 99)";
+            name.style.color = "black";
+            name2.style.color = "black";
+            name3.style.color = "black";
+            name4.style.color = "black";
+            fw.style.color = "black";
+            fw2.style.color = "black";
+            fw3.style.color = "black";
+            fw4.style.color = "black";
         }
         fb.addEventListener("mouseover", function(){
             if(cToggle.checked){
