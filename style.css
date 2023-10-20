@@ -1,0 +1,710 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+.bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:-20px;
+}
+.content-bx{
+    width: 1115px;
+    height: 680px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
+.title{
+    font-family: "Inter";
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+}
+.followers{
+    position: relative;
+    top: 10px;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(111, 107, 107);
+}
+.top-color{
+    background-color: rgb(227, 227, 248);
+    height: 240px;
+    width: 100%;
+}
+.row1{
+    grid-row:1/1;
+    grid-column: 1/4;
+}
+.fbook{
+    grid-row: 2/5;
+    grid-column: 1/4;
+    height:215px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+.twitter{
+    grid-row: 2/5;
+    grid-column: 2/4;
+    height:215px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+.instagram{
+    grid-row: 2/5;
+    grid-column: 3/4;
+    height:215px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+    border-top: 5px solid hsl(329, 70%, 58%);
+    /*border-top-color: hsl(37, 97%, 70%), hsl(329, 70%, 58%);*/
+}
+.youtube{
+    grid-row: 2/5;
+    grid-column: 4/4;
+    height:215px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+.ovr-vw{
+    grid-row: 3/5;
+    grid-column: 1/4;
+    position: relative;
+    top: 70px;
+    font-family: "Inter";
+    font-size: 20px;
+    color: rgb(81, 83, 99);
+}
+.fbook2{
+    grid-row: 4/5;
+    grid-column: 1/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.fbook02{
+    grid-row: 4/5;
+    grid-column: 2/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.instagram2{
+    grid-row: 4/5;
+    grid-column: 3/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.instagram02{
+    grid-row: 4/5;
+    grid-column: 4/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.twitter2{
+    grid-row: 5/5;
+    grid-column: 1/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.twitter02{
+    grid-row: 5/5;
+    grid-column: 2/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.youtube2{
+    grid-row: 5/5;
+    grid-column: 3/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+.youtube02{
+    grid-row: 5/5;
+    grid-column: 4/4;
+    height:125px;
+    width:255px;
+    background-color: hsl(228, 41%, 88%);
+    border-radius: 8px;
+}
+
+/*the switch box around the slider/circle*/
+.switch{
+    position: relative;
+    display: inline-block;
+    width:42px;
+    height: 20px;
+}
+.btn-name{
+    grid-column: 4/4;
+    grid-row: 1/5;
+    position: relative;
+    top: 15px;
+    left: 140px;
+    font-family: "Inter";
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(137, 140, 158);
+}
+/*hide checkbox*/
+.s-input{
+    opacity: 0;
+    width:0px;
+    height:0px;
+}
+.color-btn{
+    position: relative;
+    top:10px;
+    left:210px;
+    grid-column: 4/4;
+    grid-row: 1/4;
+}
+.circle:hover{
+    background: linear-gradient(70deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+/*the slider/circle*/
+.circle{
+    position: absolute;
+    cursor:pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(174, 178, 202);
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+/*the slider/circle*/
+.circle:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 24px;
+    bottom: 3px;
+    background-color: #ebe7e7;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .circle{
+    background: linear-gradient(70deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+/*function to make the circle slide to left & right*/
+input:checked + .circle:before{
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+.fbook,
+.twitter,
+.instagram,
+.youtube{
+    position: relative;
+    top: -50px;
+}
+.fbook2,
+.fbook02,
+.instagram2,
+.instagram02{
+    position: relative;
+    top: -20px;
+}
+.twitter2,
+.twitter02,
+.youtube2,
+.youtube02{
+    position: relative;
+    top: -10px;
+}
+.fbook > img,
+.twitter > img,
+.instagram > img,
+.youtube > img{
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+.fbook > .name,
+.twitter > .name,
+.instagram > .name,
+.youtube > .name{
+    position: relative;
+    left: 110px;
+    font-family: "Inter";
+    font-size: 11px;
+}
+.fbook > h1,
+.twitter > h1,
+.youtube > h1{
+    position: relative;
+    top: 20px;
+    left: 70px;
+    font-family: "Inter";
+    font-size: 46px;
+}
+.fbook > .txt,
+.twitter > .txt,
+.instagram > .txt{
+    position: relative;
+    top: 20px;
+    left: 75px;
+    letter-spacing: 4px;
+    font-family: "Inter";
+    font-size: 12px;
+}
+.fbook > .total,
+.twitter > .total{
+    position: relative;
+    top: 70px;
+    left: 100px;
+    color: hsl(163, 72%, 41%);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: "Inter";
+}
+.instagram > h1{
+    position: relative;
+    top: 20px;
+    left: 90px;
+    font-family: "Inter";
+    font-size: 46px;
+}
+.instagram > .total{
+    position: relative;
+    top: 70px;
+    left: 90px;
+    color: hsl(163, 72%, 41%);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: "Inter";
+}
+.youtube > .total{
+    position: relative;
+    top: 70px;
+    left: 93px;
+    color: hsl(356, 69%, 56%);
+    font-size: 11px;
+    font-weight: 600;
+    font-family: "Inter";
+}
+.youtube > .txt{
+    position: relative;
+    top: 20px;
+    left: 70px;
+    letter-spacing: 4px;
+    font-family: "Inter";
+    font-size: 12px;
+}
+.fbook2 > .tx,
+.fbook02 > .tx,
+.instagram2 > .tx,
+.instagram02 > .tx,
+.twitter2 > .tx2,
+.twitter02 > .tx2,
+.youtube2 > .tx2,
+.youtube02 > .tx2{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(81, 83, 99);
+}
+.fbook2 > img,
+.fbook02 > img,
+.instagram2 > img,
+.instagram02 > img,
+.twitter2 > img,
+.twitter02 > img,
+.youtube2 > img,
+.youtube02 > img{
+    position: relative;
+    top: 3px;
+    left: 210px;
+}
+.fbook2 > h2,
+.fbook02 > h2,
+.instagram2 > h2,
+.instagram02 > h2,
+.twitter2 > h2,
+.twitter02 > h2,
+.youtube2 > h2,
+.youtube02 > h2{
+    position: relative;
+    top: 41px;
+    left: 20px;
+    font-family: "Inter";
+}
+.instagram2 > .percent,
+.instagram02 > .percent,
+.twitter2 > .percent,
+.twitter02 > .percent{
+    position: relative;
+    top: 20px;
+    left: 190px;
+    font-family: "Inter";
+    font-size: 11px;
+    color: hsl(163, 72%, 41%);
+}
+.youtube2 > .percent,
+.youtube02 > .percent{
+    position: relative;
+    top: 20px;
+    left: 200px;
+    font-family: "Inter";
+    font-size: 11px;
+    color: hsl(356, 69%, 56%);
+}
+.fbook2 > .percent{
+    position: relative;
+    top: 20px;
+    left: 200px;
+    font-family: "Inter";
+    font-size: 11px;
+    color: hsl(163, 72%, 41%);
+}
+.fbook02 > .percent{
+    position: relative;
+    top: 20px;
+    left: 200px;
+    font-family: "Inter";
+    font-size: 11px;
+    color: hsl(356, 69%, 56%);
+}
+.fbook:hover,
+.twitter:hover,
+.instagram:hover,
+.youtube:hover,
+.fbook2:hover,
+.fbook02:hover,
+.instagram2:hover,
+.instagram02:hover,
+.twitter2:hover,
+.twitter02:hover,
+.youtube2:hover,
+.youtube02:hover{
+    background-color: hsl(229, 17%, 74%);
+    cursor: pointer;
+}
+@media screen and (min-device-width:300px) and (max-device-width:399px){
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html, body{
+        overflow-x:hidden;
+        scroll-behavior: smooth;
+    }
+    .bx{
+        display:inline-block;
+        overflow-x: hidden;
+    }
+    .content-bx{
+        display:inline-block;
+        position: relative;
+        top: 50vw;
+        left: 2.5vw;
+        width: 100%;
+        
+    }
+    #fb,#twtr,#insgrm,#yutb,
+    #fb2,#fb3,#insgrm2,#insgrm3,
+    #twtr2,#twtr3,#yutb2,#yutb3{
+        width:85%;
+        margin: 5vw;
+    }
+    #title-c{
+        position: relative;
+        top: -35vw;
+        left: 5vw;
+    }
+    .followers{
+        position: relative;
+        top: -33vw;
+        left: 5vw;
+    }
+    .btn-name{
+        position: relative;
+        top: -15vw;
+        left: 5vw;
+    }
+    .color-btn{
+        position: relative;
+        top: -20vw;
+        left: 75vw;
+    }
+    #ovrvw{
+        position: relative;
+        top: -8vw;
+        left: 5vw;
+
+    }
+    .rndm{
+        background-color: white;
+        height: 15vw;
+        position: relative;
+        bottom: -60vw;
+    }
+    #fb > img,
+    #fb > .name,
+    #fb > h1,
+    #fb > .txt,
+    #fb > .total,
+    #twtr > img,
+    #twtr > .name,
+    #twtr > h1,
+    #twtr > .txt,
+    #twtr > .total,
+    #insgrm > img,
+    #insgrm > .name,
+    #insgrm > h1,
+    #insgrm > .txt,
+    #insgrm > .total,
+    #yutb > img,
+    #yutb > .name,
+    #yutb > h1,
+    #yutb > .txt,
+    #yutb > .total{
+        position: relative;
+        left: 28vw;
+    }
+    #fb > .name{
+        left: 37vw;
+    }
+    #fb > .txt{
+        left: 29vw;
+    }
+    #fb > .total{
+        left: 35vw;
+    }
+    #twtr > .name{
+        left: 37vw;
+    }
+    #twtr > .txt{
+        left: 30.3vw;
+    }
+    #twtr > .total{
+        left: 35vw;
+    }
+    #insgrm > .name{
+        left: 37vw;
+    }
+    #insgrm > .txt{
+        left: 29vw;
+    }
+    #insgrm > .total{
+        left: 33vw;
+    }
+    #insgrm > h1{
+        left: 32vw;
+    }
+    #yutb > .name{
+        left: 37vw;
+    }
+    #yutb > .txt{
+        left: 29vw;
+    }
+    #yutb > .total{
+        left: 35vw;
+    } 
+    #fb2 > img,
+    #fb3 > img,
+    #insgrm2 > img,
+    #insgrm3 > img,
+    #twtr2 > img,
+    #twtr3 > img,
+    #yutb2 > img,
+    #yutb3 > img{
+        left: 70vw;
+    }
+    #fb3 > .percent,
+    #fb2 > .percent{
+        left: 68vw;
+    }
+    #insgrm2 > .percent,
+    #insgrm3 > .percent,
+    #twtr2 > .percent,
+    #twtr3 > .percent{
+        left: 65vw;
+    }
+    #yutb2 > .percent,
+    #yutb3 > .percent{
+        left: 67vw;
+    }
+}
+@media screen and (min-device-width:400px) and (max-device-width:499px){
+    *{
+        margin: 0vw;
+        padding: 0vw;
+    }
+    html, body{
+        overflow-x:hidden;
+        scroll-behavior: smooth;
+    }
+    .bx{
+        display:inline-block;
+        overflow-x: hidden;
+    }
+    .content-bx{
+        display:inline-block;
+        position: relative;
+        top: 50vw;
+        left: 2.5vw;
+        width: 100%;
+        
+    }
+    #fb,#twtr,#insgrm,#yutb,
+    #fb2,#fb3,#insgrm2,#insgrm3,
+    #twtr2,#twtr3,#yutb2,#yutb3{
+        width:85%;
+        margin: 5vw;
+    }
+    #title-c{
+        position: relative;
+        top: -35vw;
+        left: 5vw;
+    }
+    .followers{
+        position: relative;
+        top: -33vw;
+        left: 5vw;
+    }
+    .btn-name{
+        position: relative;
+        top: -15vw;
+        left: 5vw;
+    }
+    .color-btn{
+        position: relative;
+        top: -20vw;
+        left: 75vw;
+    }
+    #ovrvw{
+        position: relative;
+        top: -8vw;
+        left: 5vw;
+
+    }
+    .rndm{
+        background-color: white;
+        height: 15vw;
+        position: relative;
+        bottom: -60vw;
+    }
+    #fb > img,
+    #fb > .name,
+    #fb > h1,
+    #fb > .txt,
+    #fb > .total,
+    #twtr > img,
+    #twtr > .name,
+    #twtr > h1,
+    #twtr > .txt,
+    #twtr > .total,
+    #insgrm > img,
+    #insgrm > .name,
+    #insgrm > h1,
+    #insgrm > .txt,
+    #insgrm > .total,
+    #yutb > img,
+    #yutb > .name,
+    #yutb > h1,
+    #yutb > .txt,
+    #yutb > .total{
+        position: relative;
+        left: 28vw;
+    }
+    #fb > .name{
+        left: 37vw;
+    }
+    #fb > .txt{
+        left: 29vw;
+    }
+    #fb > .total{
+        left: 35vw;
+    }
+    #twtr > .name{
+        left: 37vw;
+    }
+    #twtr > .txt{
+        left: 30.3vw;
+    }
+    #twtr > .total{
+        left: 35vw;
+    }
+    #insgrm > .name{
+        left: 37vw;
+    }
+    #insgrm > .txt{
+        left: 29vw;
+    }
+    #insgrm > .total{
+        left: 33vw;
+    }
+    #insgrm > h1{
+        left: 32vw;
+    }
+    #yutb > .name{
+        left: 37vw;
+    }
+    #yutb > .txt{
+        left: 29vw;
+    }
+    #yutb > .total{
+        left: 35vw;
+    } 
+    #fb2 > img,
+    #fb3 > img,
+    #insgrm2 > img,
+    #insgrm3 > img,
+    #twtr2 > img,
+    #twtr3 > img,
+    #yutb2 > img,
+    #yutb3 > img{
+        left: 70vw;
+    }
+    #fb3 > .percent,
+    #fb2 > .percent{
+        left: 68vw;
+    }
+    #insgrm2 > .percent,
+    #insgrm3 > .percent,
+    #twtr2 > .percent,
+    #twtr3 > .percent{
+        left: 65vw;
+    }
+    #yutb2 > .percent,
+    #yutb3 > .percent{
+        left: 67vw;
+    }
+}
